@@ -1,6 +1,6 @@
 <style>
 body {
-    background-color: black;
+    background-color: lightblue;
 }
 h1{
 color: 	white;
@@ -8,12 +8,40 @@ color: 	white;
 h2{
 color: 	white;
 }
+#div1 {
+  font-size:48px;
+}
 
-/style>
-/style>
+</style>
 <!DOCTYPE html>
 <html>
 <title>GitHub Demo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div id="div1" class="fa"></div>
+
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 4000);
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+</script>
 <center><h1>Carl Joseph Talento</h1></center>
 <center><h2>University of Nueva Caceres</h2></center>
 <body>
